@@ -28,13 +28,12 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    autoprefixer-rails (5.2.1.1)
+    autoprefixer-rails (10.1.0.0)
       execjs
-      json
     bcrypt (3.1.16)
-    bootstrap-sass (3.3.5)
-      autoprefixer-rails (>= 5.0.0.1)
-      sass (>= 3.2.19)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.4)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -57,7 +56,8 @@ GEM
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
-    execjs (2.5.2)
+    execjs (2.7.0)
+    ffi (1.13.1)
     figaro (1.0.0)
       thor (~> 0.14)
     font-awesome-sass (4.3.0)
@@ -126,6 +126,8 @@ GEM
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
@@ -165,7 +167,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (= 3.3.5)
+  bootstrap-sass (= 3.4.1)
   coffee-rails (= 4.0.0)
   devise (= 4.7.1)
   figaro (= 1.0.0)
